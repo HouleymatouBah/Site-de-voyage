@@ -1,0 +1,84 @@
+.header{
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(4, 8, 25, 0.7)),url(images/chapeau.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 50px;
+
+} 
+ nav{
+    display: flex;
+    padding: 2% 8%;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+.div{
+    flex: 1;
+    text-align: center;
+}
+.div ul li{
+    display: inline-block;
+    padding: 5px 8px;
+    position: relative;
+    list-style: none; 
+ }
+.div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.div ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(223, 159, 159);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.div ul li:hover::after{
+    width: 100%;
+
+}
+.sect{
+    text-align: center;
+    padding: 120px 50px;
+}
+.lien1{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 30px ;
+   
+    /* background-color: transparent; */
+   
+    
+}
+.lien1:hover{
+    background-color: rgb(235, 176, 176);
+    transition: 0.5s;
+}
+
+
+
+
+.section1{
+    /* flex-basis: 31%; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+img{
+    padding-right: 150px;
+    margin-bottom: 3%;
+}
+.div1{
+    flex-basis: 31%;
+    margin-left: 50px;
+}
+#titre1{
+    text-align: center;
+    font-style: italic;
+}
+   

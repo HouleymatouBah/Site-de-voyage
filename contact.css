@@ -1,0 +1,102 @@
+.header{
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(4, 8, 25, 0.7)),url(images/chapeau.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-bottom: 50px;
+
+} 
+ nav{
+    display: flex;
+    padding: 2% 8%;
+    justify-content:space-between;
+    align-items: center;
+   
+}
+.div{
+    flex: 1;
+    text-align: center;
+}
+.div ul li{
+    display: inline-block;
+    padding: 5px 8px;
+    position: relative;
+    list-style: none; 
+ }
+.div ul li a{
+    text-decoration: none;
+    color: white;
+}
+.div ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(223, 159, 159);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.div ul li:hover::after{
+    width: 100%;
+
+}
+.sect{
+    text-align: center;
+    padding: 120px 50px;
+}
+.lien1{
+    text-decoration: none;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 30px ;
+   
+    /* background-color: transparent; */
+   
+    
+}
+.lien1:hover{
+    background-color: rgb(235, 176, 176);
+    transition: 0.5s;
+}
+.el{
+    padding: 10px;
+    width: 30%;
+    /* background:rgb(231, 227, 227); */
+    margin: 5px;
+    
+}
+.ele{
+    padding: 48px;
+    margin: 5px;
+    width: 46%;
+    /* background: rgb(231, 227, 227); */
+}
+
+.clique{
+    padding: 9px;
+    width: 30%;
+    cursor: pointer;
+    text-align: center;
+}
+.clique:hover {
+    background-color:brown;
+    transition: 0.5s;
+}
+h1,h3{
+    text-align: center;
+    font-style: italic;
+    color: brown;
+    text-shadow: 0 2px 2px rgb(244, 191, 191);
+}
+.formulaire{
+    background: rgb(240, 225, 225);
+    margin-left: 30%;
+    margin-right: 30%;
+    flex-basis: 31%;
+    border-radius: 50%;
+}
+.nom{
+    color: brown;
+    text-shadow: 0 2px 2px rgb(243, 193, 193);
+}
